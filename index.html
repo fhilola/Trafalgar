@@ -4,22 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header>
-        <div class="container mx-auto max-w-[640px] bg-[red] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] xxl:max-w-[1536px]">
+        <div class="container px-20 mx-auto max-w-[400px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] xxl:max-w-[1536px]">
             <nav class=" flex items-center justify-between">
                 <img src="./images/logojon.svg" alt="">
-                <ul class="hidden ">
+                <ul class="hidden md:hidden lg:flex text-zinc-400 gap-x-20 xl:flex text-zinc-400 gap-x-20 xxl:flex text-zinc-400 gap-x-20">
                     <li> <a href="#">Home</a></li>
                     <li> <a href="#">Find a doctor</a></li>
                     <li> <a href="#">Apps</a></li>
                     <li> <a href="#">Testimonials</a></li>
-                    <li> <a href="#">About us</a></li>
+                    <li> <a href="#" >About us</a></li>
                 </ul>
+                <i class="fa-solid fa-bars fa-2xl lg:hidden xl:hidden xxl:hidden"></i>
             </nav>
+
+            <div class="flex flex-col-reverse md:flex flex-col-reverse lg:grid gap-4 grid-cols-2 grid-rows-598">
+                <div class="col-6 flex flex-col justify-center mt-6">
+                    <h1 class="font-bold text-black text-2xl max-w-[500px] md:text-4xl lg:text-5xl max-w-[427px]">Virtual healthcare 
+                        for you</h1>
+                    <p class="text-zinc-400 max-w-[350px] pt-4 pb-6">Trafalgar provides progressive, and affordable 
+                        healthcare, accessible on mobile and online 
+                        for everyone</p>
+                        <div>
+                            <button class="rounded-full bg-sky-500 px-5 text-sm md:px-20 py-4 text-3xl text-white lg:rounded-full bg-sky-500 px-20 py-4 text-xl text-white">Consult today</button>
+                        </div>
+                </div>
+                <div class="col-6">
+                    <img src="./images/trafalgar-header illustration 1.png" alt="">
+                </div>
+            </div>
         </div>
     </header>
+
+    <section>
+        <div class="container px-20 mx-auto max-w-[400px] md:max-w-[640px] lg:max-w-[768px] xl:max-w-[1024px] xxl:max-w-[1280px]">
+            <div class="content text-center mt-20 md:mt-30">
+                <h2 class="text-xl max-w-[500px] my-0 mx-auto text-center font-bold md:text-2xl lg:text-3xl max-w-[427px]">Our services</h2>
+                <p class="max-w-[1000px] text-zinc-400 my-0 mx-auto pt-6 lg:max-w-[820px]">We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-x-10 gap-y-20 px-20 mx-auto text-center mt-20 md:grid grid-rows-2 grid-cols-2  lg:grid grid-rows-2 grid-cols-3  xl:grid grid-rows-2 grid-cols-3">
+            <div class="rounded-lg shadow-md col-12 md:col-6 lg:col-4">
+                <img class="pt-8 pl-8 pb-5" src="./images/lupa.svg" alt="">
+                <h3 class="font-bold text-left pb-3 pl-8">Online pharmacy</h3>
+                <p class="text-left text-zinc-400 pl-8 pb-8 max-w-[261px] ">Buy  your medicines with our mobile application with a simple delivery system</p>
+            </div>
+            <div class="rounded-lg shadow-md col-12 md:col-6 lg:col-4">
+                <img class="pt-8 pl-8 pb-5" src="./images/frame.svg" alt="">
+                <h3 class="font-bold text-left pb-3 pl-8">Online pharmacy</h3>
+                <p class="text-left text-zinc-400 pl-8 pb-8 max-w-[261px] ">Buy  your medicines with our mobile application with a simple delivery system</p>
+            </div>
+            <div class="rounded-lg shadow-md col-12 md:col-6 lg:col-4">
+                <img class="pt-8 pl-8 pb-5" src="./images/consultation.svg" alt="">
+                <h3 class="font-bold text-left pb-3 pl-8">Consultation</h3>
+                <p class="text-left text-zinc-400 pl-8 pb-8 max-w-[261px] ">Free consultation with our trusted doctors and get the best recomendations</p>
+            </div>
+            <div class="rounded-lg shadow-md col-12 md:col-6 lg:col-4">
+                <img class="pt-8 pl-8 pb-5" src="./images/info.svg" alt="">
+                <h3 class="font-bold text-left pb-3 pl-8">Details info</h3>
+                <p class="text-left text-zinc-400 pl-8 pb-8 max-w-[261px] ">Free consultation with our trusted doctors and get the best recomendations</p>
+            </div>
+            <div class="rounded-lg shadow-md col-12 md:col-6 lg:col-4">
+                <img class="pt-8 pl-8 pb-5" src="./images/emergancy-care.svg" alt="">
+                <h3 class="font-bold text-left pb-3 pl-8">Emergency carey</h3>
+                <p class="text-left text-zinc-400 pl-8 pb-8 max-w-[261px] ">You can get 24/7 urgent care for yourself or your children and your
+                    lovely family</p>
+            </div>
+            <div class="rounded-lg shadow-md col-12 md:col-6 lg:col-4">
+                <img class="pt-8 pl-8 pb-5" src="./images/tracking.svg" alt="">
+                <h3 class="font-bold text-left pb-3 pl-8">Tracking</h3>
+                <p class="text-left text-zinc-400 pl-8 pb-8 max-w-[261px] ">Track and save your medical history and health data </p>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="rounded-full border border-sky-500 text-sky-500 px-20 py-5 text-lg mt-20">Learn more</button>
+        </div>
+
+        <div class="container mt-20 px-20 mx-auto max-w-[400px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] xxl:max-w-[1536px]">
+           <div class="flex gap-x-10 flex-col-reverse md:flex flex-col-reverse lg:grid gap-4 grid-cols-2 grid-rows-598">
+            <div class="col-6">
+                <img src="./images/trafalgar-illustration sec02 1.png" alt="">
+            </div>
+            <div class="col-6 flex flex-col justify-center mt-6">
+                <h2 class="font-bold text-black text-xl max-w-[481px] md:text-3xl lg:text-4xl max-w-[427px]">Leading healthcare providers</h2>
+                <p class="text-zinc-400 max-w-[350px] pt-4 pb-6">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride 
+                    in the solutions we deliver
+                </p>
+                <div>
+                    <button class="rounded-full border border-sky-500 text-sky-500 px-10 py-5 text-sm md:px-20 py-5 text-lg lg:text-xl">Learn more</button>
+                </div>
+            </div>
+           </div>
+
+           <div class="mt-20 flex gap-x-10 flex-col-reverse md:flex flex-col-reverse lg:grid gap-4 grid-cols-2 grid-rows-598">
+            <div class="col-6 flex flex-col justify-center mt-6">
+                <h2 class="font-bold text-black text-xl max-w-[481px] md:text-3xl lg:text-4xl max-w-[254px]">Download our mobile apps</h2>
+                <p class="text-zinc-400 max-w-[350px] pt-4 pb-6">Our dedicated patient engagement app and 
+                    web portal allow you to access information instantaneously (no tedeous form, long calls, 
+                    or administrative hassle) and securely
+                </p>
+                <div>
+                    <button class="rounded-full border border-sky-500 text-sky-500 px-10 py-5 text-sm md:px-20 py-5 text-lg lg:text-xl">Download</button>
+                </div>
+            </div>
+            <div class="col-6">
+                <img src="./images/app-illustration.png" alt="">
+            </div>
+           </div>
+        </div>
+
+           <div class="container bg-sky-400 mt-20 px-20 mx-auto max-w-[400px] md:max-w-[768px] lg: rounded-2xl h-[425px] max-w-[1124px] xl:max-w-[1280px] xxl:max-w-[1536px]">
+            <div>
+                <div>
+                    <h2 class="">What our customer are saying</h2>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+           </div>
+        
+
+
+    </section>
 </body>
 </html>
